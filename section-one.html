@@ -1,172 +1,302 @@
 <!DOCTYPE html>
 <html lang="ko">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta name="keywords" content="html의 구조" />
-        <meta name="description" content="html의 구조를 알아봅시다" />
-        <meta name="author" content="Allen Ye" />
-        <link rel="stylesheet" href="style-s1.css" />
-        <title>Do it! Web Developent</title>
-    </head>
-    <body>
-        <h1>프런트엔드 웹 개발</h1>
-        <hr />
-        <p>HTML</p>
-        <p>CSS</p>
-        <p>JS</p>
-        <hr />
-        <h1>HTML</h1>
-        <h2>#. Semantic tag</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="keywords" content="html의 구조" />
+    <meta name="description" content="html의 구조를 알아봅시다" />
+    <meta name="author" content="Allen Ye" />
+    <title>Do it! Web Developent</title>
+    <style>
+      td,
+      table {
+        border: 1px solid black;
+      }
+      table {
+        border-spacing: 0px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>프런트엔드 웹 개발</h1>
+    <hr />
+    <p>HTML</p>
+    <p>CSS</p>
+    <p>JS</p>
+    <hr />
+    <h1>HTML</h1>
+    <h2>#. Semantic tag</h2>
+    <p>
+      semantic;'의미론적인', 이름만 봐도 그 의미를 알 수 있는 tags.<br />
+      문서의 구조를 파악하기 쉽고 장애인 등의 접근성이 용이해진다. 여러
+      기기에서의 표현이 쉽다.
+    </p>
+    <blockquote>
+      <strong>[인용문]</strong> 비타민 c와 비타민 P가 풍부해<br />혈액 순환,
+      감기예방 등에 좋은 것으로 알려졌다.
+    </blockquote>
+    <h3>문서의 큰 틀을 잡는 semantic tags.</h3>
+    <ol type="a" start="2">
+      <li>[header] - [nav]</li>
+      <li>[main] - [article] - [section]</li>
+      <li>[aside]</li>
+      <li>[footer]</li>
+    </ol>
+    <hr />
+    <p>
+      <strong>굵게 강조할 텍스트</strong><br />
+      <b>굵게 표시할 텍스트</b><br />
+      <em>이탤릭체로 강조할 텍스트</em><br />
+      <i>이탤릭체로 표시할 텍스트</i>
+    </p>
+    <hr />
+    <dl>
+      <dt>[dt]설명 목록 - 이름</dt>
+      <dd>[dd]값</dd>
+    </dl>
+    <dl>
+      <dt>[dt]선물용 3kg</dt>
+      <dd>[dd]소과 13~16과</dd>
+      <dd>[dd]중과 10~12과</dd>
+    </dl>
+    <hr />
+    <table>
+      <caption>
+        표 제목
+      </caption>
+      <tr>
+        <td>1행 1열</td>
+        <td>1행 2열</td>
+      </tr>
+      <tr>
+        <td>2행 1열</td>
+        <td>2행 2열</td>
+      </tr>
+    </table>
+    <blockquote>table tag 에 대한 자세한 사항은 해당 도서 88p 참고.</blockquote>
+    <hr />
+    <img src="04/images/tangerines.jpg" alt="레드향" width="600" />
+    <hr />
+    <object data="04/product.pdf" type="" width="900" height="800"></object>
+    <embed src="04/medias/spring.mp3" type="" />
+    <audio src="04/medias/spring.mp3" controls loop muted></audio>
+    <video src="04/medias/salad.mp4" controls width="700"></video>
+    <video src="04/medias/flower.mp4" width="640" controls muted></video>
+    <hr />
+    <a href="05/order.html" target="_self">주문서 작성하기</a>
+    <a href="05/order.html" target="_blank"
+      ><img src="04/images/tangerines.jpg" alt="레드향"
+    /></a>
+    <hr />
+    <form action="" autocomplete="off">
+      <fieldset>
+        <legend>상품 선택</legend>
         <p>
-            semantic;'의미론적인', 이름만 봐도 그 의미를 알 수 있는 tags.<br />
-            문서의 구조를 파악하기 쉽고 장애인 등의 접근성이 용이해진다. 여러
-            기기에서의 표현이 쉽다.
+          주문할 상품을 선택해 주세요.
+          <b>- checkbox는 다수 선택 가능</b>
         </p>
-        <blockquote>
-            <strong>[인용문]</strong> 비타민 c와 비타민 P가 풍부해<br />혈액
-            순환, 감기예방 등에 좋은 것으로 알려졌다.
-        </blockquote>
-        <h3>문서의 큰 틀을 잡는 semantic tags.</h3>
-        <ol type="a" start="2">
-            <li>[header] - [nav]</li>
-            <li>[main] - [article] - [section]</li>
-            <li>[aside]</li>
-            <li>[footer]</li>
-        </ol>
-        <hr />
-        <p>
-            <strong>굵게 강조할 텍스트</strong><br />
-            <b>굵게 표시할 텍스트</b><br />
-            <em>이탤릭체로 강조할 텍스트</em><br />
-            <i>이탤릭체로 표시할 텍스트</i>
-        </p>
-        <hr />
-        <dl>
-            <dt>[dt]설명 목록 - 이름</dt>
-            <dd>[dd]값</dd>
-        </dl>
-        <dl>
-            <dt>[dt]선물용 3kg</dt>
-            <dd>[dd]소과 13~16과</dd>
-            <dd>[dd]중과 10~12과</dd>
-        </dl>
-        <hr />
-        <table>
-            <caption>
-                표 제목
-            </caption>
-            <tr>
-                <td>1행 1열</td>
-                <td>1행 2열</td>
-            </tr>
-            <tr>
-                <td>2행 1열</td>
-                <td>2행 2열</td>
-            </tr>
-        </table>
-        <blockquote>
-            table tag 에 대한 자세한 사항은 해당 도서 88p 참고.
-        </blockquote>
-        <hr />
-        <img src="04/images/tangerines.jpg" alt="레드향" width="600" />
-        <hr />
-        <object data="04/product.pdf" type="" width="900" height="800"></object>
-        <embed src="04/medias/spring.mp3" type="" />
-        <audio src="04/medias/spring.mp3" controls autoplay loop muted></audio>
-        <video src="04/medias/salad.mp4" controls width="700"></video>
-        <video
-            src="04/medias/flower.mp4"
-            width="640"
-            controls
-            autoplay
-            muted
-        ></video>
-        <hr />
-        <a href="05/order.html" target="_self">주문서 작성하기</a>
-        <a href="05/order.html" target="_blank"
-            ><img src="04/images/tangerines.jpg" alt="레드향"
-        /></a>
-        <hr />
-        <form action="" autocomplete="off">
-            <fieldset>
-                <legend>상품 선택</legend>
-                <p>
-                    주문할 상품을 선택해 주세요.
-                    <b>- checkbox는 다수 선택 가능</b>
-                </p>
-                <label for=""
-                    ><input type="checkbox" value="s_3" />선물용 3kg</label
-                >
-                <label for=""
-                    ><input type="checkbox" value="s_5" />선물용 5kg</label
-                >
-                <label for=""
-                    ><input type="checkbox" value="f_3" />가정용 3kg</label
-                >
-                <p>포장 선택 <b>- radio는 택일 선택</b></p>
-                <label for=""
-                    ><input type="radio" name="gift" value="yes" />선물
-                    포장</label
-                >
-                <label for=""
-                    ><input type="radio" name="gift" value="no" checked />포장
-                    안함</label
-                >
-            </fieldset>
-            <fieldset>
-                <legend>배송정보</legend>
-                <ul>
-                    <li>
-                        <label for="prod">주문 상품</label>
-                        <input
-                            type="text"
-                            id="prod"
-                            value="상품용 3kg"
-                            readonly
-                        />
-                    </li>
-                    <li>
-                        <label for=""
-                            >이름<input
-                                type="text"
-                                placeholder="안에 넣는 방식, BAD"
-                        /></label>
-                    </li>
-                    <li>
-                        <label for="user-name">이름</label>
-                        <input
-                            type="text"
-                            id="user-name"
-                            placeholder="따로 두는 방식, GOOD"
-                            autofocus
-                            required
-                        />
-                    </li>
-                    <li>
-                        <label for="addr">배송 주소</label>
-                        <input type="search" id="addr" required />
-                    </li>
-                    <li>
-                        <label for="mail">이메일</label>
-                        <input type="email" id="mail" />
-                    </li>
-                    <li>
-                        <label for="phone">연락처</label>
-                        <input
-                            type="tel"
-                            id="phone"
-                            placeholder="하이픈 빼고 입력해주세요"
-                            required
-                        />
-                    </li>
-                </ul>
-            </fieldset>
+        <label for=""><input type="checkbox" value="s_3" />선물용 3kg</label>
+        <label for=""><input type="checkbox" value="s_5" />선물용 5kg</label>
+        <label for=""><input type="checkbox" value="f_3" />가정용 3kg</label>
+        <p>포장 선택 <b>- radio는 택일 선택</b></p>
+        <label for=""
+          ><input type="radio" name="gift" value="yes" />선물 포장</label
+        >
+        <label for=""
+          ><input type="radio" name="gift" value="no" checked />포장 안함</label
+        >
+        <!-- *name attribute 는 PHP와 같은 웹 프로그래밍에서 form 요소를 제어할 때 사용. 
+        *하나의 버튼만 선택가능하게 하려면 선택지의 값들을 동일하게 지정한다. -->
+      </fieldset>
+      <fieldset>
+        <legend>상품 선택 (type2)</legend>
+        <ul>
+          <li>
+            <label for=""
+              ><input type="checkbox" value="s_3" />선물용 3kg</label
+            >
+            <input type="number" min="0" max="5" value="1" />개 (최대 5개)
+          </li>
+          <li>
+            <label for=""
+              ><input type="checkbox" value="s_5" />선물용 5kg</label
+            >
+            <input type="number" min="0" max="3" value="1" />개 (최대 3개)
+          </li>
+          <li>
+            <label for=""
+              ><input type="checkbox" value="f_3" />선물용 3kg</label
+            >
+            <input type="range" min="0" max="5" />개 (최대 5개)
+          </li>
+          <li>
+            <label for=""
+              ><input type="checkbox" value="f_5" />선물용 5kg</label
+            >
+            <input type="range" min="0" max="3" value="1" />개 (최대 3개)
+          </li>
+        </ul>
+      </fieldset>
+      <fieldset>
+        <legend>상품 선택 (type3)</legend>
+        <label for="prod1">상품 선택</label>
+        <select name="" id="prod1">
+          <option value="special_3">선물용 3kg</option>
+          <option value="special_5">선물용 5kg</option>
+          <option value="family_3" selected>가정용 3kg</option>
+          <option value="family_5">가정용 5kg</option>
+        </select>
+        <label for="prod2">포장 여부</label>
+        <input type="text" id="prod2" list="pack" />
+        <datalist id="pack">
+          <option value="package">선물 포장</option>
+          <option value="no_package">포장 안 함</option>
+        </datalist>
+      </fieldset>
+      <fieldset>
+        <legend>배송정보</legend>
+        <ul>
+          <li>
+            <label for="prod">주문 상품</label>
+            <input type="text" id="prod" value="상품용 3kg" readonly />
+          </li>
+          <li>
+            <label for=""
+              >이름<input type="text" placeholder="안에 넣는 방식, BAD"
+            /></label>
+          </li>
+          <li>
+            <label for="user-name">이름</label>
+            <input
+              type="text"
+              id="user-name"
+              placeholder="따로 두는 방식, GOOD"
+              autofocus
+              required
+            />
+          </li>
+          <li>
+            <label for="addr">배송 주소</label>
+            <input type="search" id="addr" required />
+          </li>
+          <li>
+            <label for="mail">이메일</label>
+            <input type="email" id="mail" />
+          </li>
+          <li>
+            <label for="phone">연락처</label>
+            <input
+              type="tel"
+              id="phone"
+              placeholder="하이픈 빼고 입력해주세요"
+              required
+            />
+          </li>
+          <li>
+            <label for="memo">메모</label>
+            <textarea name="" id="memo" cols="60" rows="3"></textarea>
+            <!-- *자기소개나 건의사항처럼 여러 줄의 텍스트를 입력하는 field. cols는 대략적인 글자수를
+            * rows는 화면에 보여지는 줄 수를 나타낸다. -->
+          </li>
+        </ul>
+      </fieldset>
+      <div>
+        <input type="submit" value="주문하기" />
+        <input type="reset" value="취소하기" />
+      </div>
+    </form>
+    <hr />
+    <div>
+      <h1>회원 가입을 환영합니다.</h1>
+      <form action="">
+        <fieldset>
+          <legend>사용자 정보</legend>
+          <ul>
+            <li>
+              <label for="uid">아이디</label>
+              <input type="text" id="uid" required />
+            </li>
+            <li>
+              <label for="umail">이메일</label>
+              <input type="email" id="umail" required />
+            </li>
+            <li>
+              <label for="pwd1">비밀번호</label>
+              <input type="password" id="pwd1" required />
+            </li>
+            <li>
+              <label for="pwd2">비밀번호 확인</label>
+              <input type="password" id="pwd2" required />
+            </li>
+            <li>
+              <label for="path">가입 경로</label>
+              <select id="path">
+                <option value="blog">블로그</option>
+                <option value="search">검색</option>
+                <option value="sns" selected>SNS</option>
+                <option value="etc">기타</option>
+              </select>
+            </li>
+            <li>
+              <label for="memo">메모</label>
+              <textarea
+                name=""
+                id="memo"
+                cols="40"
+                rows="4"
+                placeholder="남길 말씀이 있다면 여기에"
+              ></textarea>
+            </li>
             <div>
-                <input type="submit" value="주문하기" />
-                <input type="reset" value="취소하기" />
+              <input type="image" src="05/images/login.png" alt="로그인" />
             </div>
-        </form>
-        <hr />
-    </body>
+          </ul>
+        </fieldset>
+        <fieldset>
+          <legend>이벤트와 새로운 소식</legend>
+          <input type="radio" name="mailing" id="mailing_y" />
+          <label for="mailing_y">메일 수신</label>
+          <input type="radio" name="mailing" id="mailing_n" checked />
+          <label for="mailing_n">메일 수신 안 함</label>
+        </fieldset>
+        <div>
+          <input type="submit" value="가입하기" />
+          <input type="reset" value="취소" />
+        </div>
+      </form>
+    </div>
+    <hr />
+    <h1>날짜 지정하기</h1>
+    <input type="date" min="2023-08-13" max="2023-08-20" />
+    <input type="month" />
+    <input type="week" />
+    <h1>시간 지정하기</h1>
+    <input type="time" name="" id="" />
+    <input type="datetime-local" name="" id="" />
+    <hr />
+    <form action="">
+      <input
+        type="button"
+        value="공지 창 열기"
+        onclick="window.open('05/notice.html')"
+      />
+      <input type="file" name="" id="" />
+      <input type="hidden" name="steel" />
+    </form>
+    <form>
+      <button type="submit">주문하기</button>
+      <button type="reset">취소하기</button>
+    </form>
+    <hr />
+    <h1>05_quiz-2</h1>
+    <h2>프런트엔드 개발자 지원서</h2>
+    <p>HTML, CSS, 자바스크립트의 기술을 이해하고...</p>
+    <hr />
+    <form action="">
+      <fieldset>
+        <legend>개인 정보</legend>
+        <label for=""></label>
+      </fieldset>
+    </form>
+  </body>
 </html>

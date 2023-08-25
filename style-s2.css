@@ -1,0 +1,58 @@
+/** 'css minify', 'css compress'를 이용해서 주석이나 줄바꿈, 공백 등을 */
+/** 제거하고 네트워크에 업로드한다. 그래서 웹사이트들의 css코드가 그렇게 */
+/** 생긴 거였구나. */
+
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  /* font-family: "Courier New", Courier, monospace; */
+  /** 첫 번째 글꼴이 사용자의 device에 없을 경우를 대비한 글꼴을 2개 지정해준다. */
+  /** "Courier New" 처럼 띄어쓰기가 들어갈 경우 " "를 붙여준다. */
+  text-align: left;
+}
+h1 {
+  font-family: "Nanum Brush Script", cursive;
+  font-size: 60px;
+  line-height: column;
+}
+p {
+  /* font-family: "Nanum Brush Script", cursive; */
+  font-size: 25px;
+  line-height: 50px;
+  line-height: 2; /** 2배를 뜻함 */
+  line-height: 200%;
+  /** 'line-height' 위 3개의 결과는 같게 표현된다. */
+  font-style: italic;
+  text-decoration: underline;
+}
+.shadow1 {
+  text-shadow: 3px 3px 2px black;
+}
+.shadow2 {
+  text-shadow: -3px 3px yellow;
+  letter-spacing: 0.3em;
+}
+.shadow3 {
+  text-shadow: 3px -5px 3px blue;
+}
+/** font-style 에 관한 참조 [Do it! Wep develope] p.194 참조. */
+/*todo  */
+.trans1 {
+  text-transform: capitalize;
+}
+.trans2 {
+  text-transform: uppercase;
+}
+.trans3 {
+  text-transform: lowercase;
+}
+.book {
+  list-style-type: lower-roman;
+  padding-left: 50px;
+}
+/*? 왜 안 되는 거지? 'ol' 'ul' 둘다 스타일이 적용이 안 돼. */
+/** padding을 없애니까 적용 안 되는 거였구만. 이렇게 또 하나 배워 간다. */
