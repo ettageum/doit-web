@@ -5,12 +5,25 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Do it! Web Develope Part 2</title>
     <style>
+      * {
+        box-sizing: border-box;
+      }
       p {
         text-align: center;
         color: black;
       }
       h1 {
         text-align: center;
+      }
+      .round1 {
+        float: left;
+        background-color: orange;
+        width: 200px;
+        height: 140px;
+        border-top-left-radius: 50% 30%;
+      }
+      .header__color {
+        color: red;
       }
     </style>
     <link rel="stylesheet" href="style-s2.css" />
@@ -37,5 +50,31 @@
       <li>첫 코딩 시리즈</li>
       <li>된다 시리즈</li>
     </ol>
+    <h3>
+      <b class="header__color">콘텐츠 영역의 크기를 결정</b>하는 width, height
+      속성
+    </h3>
+    <div class="round1"></div>
+    <p>
+      margin collapse 는 여러 요소를 세로로 배치할 떄 맨위 마진과 맨 아래 마진에
+      비해 중간 마진이 지나치게 커지는 것을 방지하기 위한 것<br />margin
+      collapse 는 아래 마진과 위 마진이 서로 만날 때 큰 마진값으로 합쳐지는
+      것으로 좌우 마진이 만날 때 중첩되지 않는다.
+    </p>
+    <div id="container">
+      <header id="header">
+        <h1>사이트 제목</h1>
+      </header>
+      <aside id="sidebar">
+        <h2>사이드바</h2>				
+      </aside>
+      <section id="contents">
+        <h2>본문</h2>
+      </section>
+      <footer id="footer">
+        <h2>푸터</h2>
+      <footer>
+    </div>
+    <h1 href="https://google.com">Is it work?</h1>
   </body>
 </html>
